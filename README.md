@@ -1,25 +1,28 @@
 # Bitcoin-Cash-MoneyMoney
-Fetches amount and value of privately held Bitcoin Cash address via blockexplorer and returns it as a security.  
-This can be also be used to track your cold storage.
+
+Fetches balances from bitcoin.com and returns them as securities
 
 ## Extension Setup
 
 You can get a signed version of this extension from
 
-* my [GitHub releases page](https://github.com/Jacubeit/Bitcoin-Cash-MoneyMoney/releases/tag/v0.1), or
+* my [GitHub releases page](https://github.com/aaronk6/Bitcoin-Cash-MoneyMoney/releases), or
 * the [MoneyMoney Extensions](https://moneymoney-app.com/extensions/) page
 
 Once downloaded, move `Bitcoin Cash.lua` to your MoneyMoney Extensions folder.
 
-**Note:** This extension requires MoneyMoney **Version 2.3.3** or newer.
+## Account Setup in MoneyMoney
 
-## MoneyMoney Setup
+* Add a new account of type “Bitcoin Cash”
+* Enter one or more Bitcoin Cash addresses (comma-separated, each address needs to start with `bitcoincash:`)
 
-Add a new account (type "Bitcoin Cash"). 
+**Note:** If your address doesn’t start with `bitcoincash:`, it is probably in legacy format. If this is the case, you can convert it here: https://cashaddr.bitcoincash.org/
 
-**Use your Bitcoin Cash adresses coma seperated as user name**  
-`1KuWLoZuoJgz3N6sLoAwGth9XGm8YuFTGt, 1KuWLoZuoJgz3N6sLoAwGth9XGm8YuFTGt` (example)
+## Known Issues and Limitations
 
-**Use whatever you want as password**  
-`123` (example)
+* Always assumes EUR as base currency
+
+## Credits
+
+Powered by [CoinGecko API](https://www.coingecko.com/en/api) and [bitcoin.com](https://bitcoin.com/)
 
