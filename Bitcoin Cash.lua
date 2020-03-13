@@ -30,7 +30,7 @@
 
 
 WebBanking{
-  version = 0.1,
+  version = 1.00,
   description = "Include your Bitcoin Cash as cryptoportfolio in MoneyMoney by providing Bitcoin Cash addresses as usernme (comma seperated) and a random Password",
   services= { "Bitcoin Cash" }
 }
