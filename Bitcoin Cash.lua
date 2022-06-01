@@ -39,7 +39,7 @@ local currencyId = "bitcoin-cash"
 local currencyDecimals = 8
 local marketName = "CoinGecko"
 local priceUrl = "https://api.coingecko.com/api/v3/simple/price?ids=" .. currencyId .. "&vs_currencies=" .. currencyField
-local balanceUrl = "https://rest.bitcoin.com/v2/address/details/"
+local balanceUrl = "https://api.fullstack.cash/v5/electrumx/balance/"
 
 local addresses
 local balances
@@ -108,7 +108,7 @@ function queryBalances(addresses)
 
   for key, address in pairs(addresses) do
     res = JSON(connection:request("GET", balanceUrl .. address))
-    table.insert(balances, res:dictionary()["balanceSat"])
+    table.insert(balances, res:dictionary()["balance"]["confirmed"])
   end
 
   return balances
