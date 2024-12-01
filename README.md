@@ -1,3 +1,7 @@
+# ⚠️ REPOSITORY ARCHIVED
+
+**This repository has been archived as there is no longer any demand for this extension.** 
+
 # Bitcoin-Cash-MoneyMoney
 
 Fetches balances from bitcoin.com and returns them as securities.
